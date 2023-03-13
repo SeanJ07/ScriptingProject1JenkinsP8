@@ -1,18 +1,24 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MovementControls : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float speed;
+    public float turnSpeed;
+
+    private void Update ()
     {
-        
+        Movement();
     }
 
-    // Update is called once per frame
-    void Update()
+    void Movement ()
     {
-        
+        float forwardMovement = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+        float turnMovement = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+
+        transform.Translate(Vector3.forward * forwardMovement);
+        transform.Rotate(Vector3.up * turnMovement);
     }
 }
