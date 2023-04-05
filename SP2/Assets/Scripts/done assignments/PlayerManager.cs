@@ -9,6 +9,6 @@ public class PlayerManager : MonoBehaviour
     {
         //You can access a static variable by using the class name
         //and the dot operator.
-        int x = Player.playerCount;
+        int x = StaticPlayer.playerCount;
     }
 }
