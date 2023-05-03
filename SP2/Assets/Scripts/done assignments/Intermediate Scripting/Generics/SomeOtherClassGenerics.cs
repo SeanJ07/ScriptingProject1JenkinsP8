@@ -6,7 +6,7 @@ public class SomeOtherClassGenerics : MonoBehaviour
 {
     void Start()
     {
-        SomeClass myClass = new SomeClass();
+        SomeClassGenerics myClass = new SomeClassGenerics();
 
         //In order to use this method you must
         //tell the method what type to replace

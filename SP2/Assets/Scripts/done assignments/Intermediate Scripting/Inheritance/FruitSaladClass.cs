@@ -9,9 +9,9 @@ public class FruitSaladClass : MonoBehaviour
         //Let's illustrate inheritance with the 
         //default constructors.
         Debug.Log("Creating the fruit");
-        Fruit myFruit = new Fruit();
+        FruitClass myFruit = new FruitClass();
         Debug.Log("Creating the apple");
-        Apple myApple = new Apple();
+        AppleClass myApple = new AppleClass();
 
         //Call the methods of the Fruit class.
         myFruit.SayHello();
@@ -26,9 +26,9 @@ public class FruitSaladClass : MonoBehaviour
         //Now let's illustrate inheritance with the 
         //constructors that read in a string.
         Debug.Log("Creating the fruit");
-        myFruit = new Fruit("yellow");
+        myFruit = new FruitClass("yellow");
         Debug.Log("Creating the apple");
-        myApple = new Apple("green");
+        myApple = new AppleClass("green");
 
         //Call the methods of the Fruit class.
         myFruit.SayHello();
